@@ -1,4 +1,4 @@
-use logo::{program, Scope};
+use brachiologo::{program, Scope};
 
 fn main() {
     let prog = program("to square :n repeat 4 [fd :n rt 90] end square 90")
