@@ -5,6 +5,8 @@ authors = ["Joe Neeman <joeneeman@gmail.com>"]
 edition = "2021"
 description = "Parser and evaluator for the LOGO language"
 readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jneem/brachiologo"
 
 [dependencies]
 nom = "7.1.2"
