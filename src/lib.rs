@@ -71,10 +71,13 @@ pub struct ProcedureCall {
     pub params: Vec<NumExpr>,
 }
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, thiserror::Error)]
 pub enum Error {
+    #[error("wrong number of parameters (expected {expected}, found {found})")]
     WrongParams { expected: u32, found: u32 },
+    #[error("unknown procedure \"{:?}\"", name.0)]
     UnknownProcedure { name: Ident },
+    #[error("unknown variable \"{:?}\"", name.0)]
     UnknownVariable { name: Ident },
 }
 

@@ -10,3 +10,4 @@ repository = "https://github.com/jneem/brachiologo"
 
 [dependencies]
 nom = "7.1.2"
+thiserror = "1.0.38"
